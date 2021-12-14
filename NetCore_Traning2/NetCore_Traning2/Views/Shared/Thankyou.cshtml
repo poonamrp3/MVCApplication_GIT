@@ -1,0 +1,25 @@
+﻿@model NetCore_Traning2.Models.Product
+
+@{
+    ViewData["Title"] = "Thankyou";
+}
+
+<h2>Thankyou</h2>
+
+
+<div class="form-group">
+    @Html.Label("Product Id")
+    @Html.ValueFor(d=>d.ProductId)
+</div>
+<div class="form-group">
+    @Html.Label("Product Name")
+    @Html.ValueFor(d => d.ProductName)
+</div>
+<div class="form-group">
+    @Html.Label("Product Code")
+    @Html.ValueFor(d => d.ProductCode)
+</div>
+<div class="form-group">
+    @Html.Label("Product Price")
+    @Html.ValueFor(d => d.Price)
+</div>

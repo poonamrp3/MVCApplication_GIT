@@ -1,0 +1,39 @@
+﻿@model MVCApplication.Models.Login
+@{
+                /**/
+
+                ViewBag.Title = "Login";
+                Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+}
+
+
+
+<div style="align-content:center;padding-left:200px;">
+    <h2>Login Here</h2>
+    @using (Html.BeginForm("Submit", "AppMain", FormMethod.Post))
+    {
+        <div class="form-group">
+            <label for="username" class="col-sm-2 control-label">UserName</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="UserName" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" name="Password" />
+            </div>
+        </div>
+
+        <div class="form-group" style="padding-top:10px;">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+

@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Information";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <p>
+        <h5 style="align-content:center;padding-left:10px;padding-right:10px;">
+            C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes".
+            This application will provide you the information and practices to get hold of the language so you can create amazing computer application.
+        </h5>
+    </p>
+    <br />
+    <div style="padding-left:50px;">
+        <button class="btn btn-info" type="button" value="Log In" id="btnLogin" onclick="location.href='@Url.Action("Login", "AppMain")'">Log In</button>
+    </div>
+    <div style="padding-left:50px;padding-top:10px;">
+        <button class="btn btn-info" type="button" value="Log In" id="btnRegister" onclick="location.href='@Url.Action("Register", "AppMain")'">Register</button>
+    </div>
+</body>
+
+
